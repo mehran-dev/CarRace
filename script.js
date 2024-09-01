@@ -29,7 +29,7 @@ function startGame() {
   resetPlayer();
   startBoard();
   setupBadGuy(10);
-  animationGame = requestAnimationFrame(playGame);
+  requestAnimationFrame(playGame);
 }
 
 function resetPlayer() {
@@ -236,9 +236,3 @@ function playGame() {
     }
   }
 }
-
-let logger = () => {
-  console.log("logger");
-};
-
-const x = requestAnimationFrame(logger);
